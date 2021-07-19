@@ -1,6 +1,31 @@
 body, .App {
     height: 100vh;
     display: grid;
-    background: #000;
+    background: lightgray;
 }
-iframe { margin: auto; }
+
+ul {
+    list-style: none;
+}
+
+.spinner-container {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-spinner {
+    font-size: xx-large;
+    animation: spin 1500ms infinite linear;
+}
+
+@keyframes spin {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 360deg;
+    }
+}
